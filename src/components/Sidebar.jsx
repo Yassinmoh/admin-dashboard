@@ -42,7 +42,7 @@ const Sidebar = () => {
                                     {item.title}
                                 </p>
                                 {item.links.map((link)=>(
-                                    <NavLink to={`/${link.name}`} key={link.title} onClick={handleCloseSidebar} className={({isActive})=>
+                                    <NavLink to={`/${link.name}`} key={Math.random()} onClick={handleCloseSidebar} className={({isActive})=>
                                     isActive ? activeLink : normalLink}>
                                         {link.icon}
                                         <span className="capitalize">
